@@ -1,0 +1,14 @@
+N = int(input("Введите N: "))
+
+a = []
+print("Введите коэффициенты:")
+for i in range(N):
+    a.append(float(input()))
+
+x = float(input("Введите x: "))
+
+result = 0
+for i in range(1, N):
+    result += i * a[i] * (x ** (i - 1))
+
+print(result)
